@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+string accessibility_desc
+string accessibility_label
+string accessibility_service_description
+string app_name
+string grant_button
+string granted_label
+string permissions_desc
+string permissions_title
+string write_settings_desc
+string write_settings_label
+style Theme.BrightnessBar
+xml brightness_accessibility_service_config

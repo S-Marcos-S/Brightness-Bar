@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Brightness Bar</string>
+    <string name="accessibility_service_description">Permite controlar o brilho da tela deslizando o dedo pela barra de notificações.</string>
+    <string name="permissions_title">Permissões Necessárias</string>
+    <string name="permissions_desc">Para funcionar, o aplicativo precisa de duas permissões especiais:</string>
+    <string name="write_settings_label">1. Modificar Configurações do Sistema</string>
+    <string name="write_settings_desc">Necessário para alterar o nível de brilho.</string>
+    <string name="accessibility_label">2. Serviço de Acessibilidade</string>
+    <string name="accessibility_desc">Necessário para detectar o deslize na barra de status.</string>
+    <string name="grant_button">Conceder</string>
+    <string name="granted_label">Concedida</string>
+</resources>
