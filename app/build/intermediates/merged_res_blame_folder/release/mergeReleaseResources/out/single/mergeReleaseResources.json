@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-release-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-main-36:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-release-35:/xml_brightness_accessibility_service_config.xml.flat",
+        "source": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-main-36:/xml/brightness_accessibility_service_config.xml"
+    },
+    {
+        "merged": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-release-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.marcos.brightnessbar.app-release-35:/xml_brightness_accessibility_service_config.xml.flat",
+        "source": "com.marcos.brightnessbar.app-main-36:/xml/brightness_accessibility_service_config.xml"
+    },
+    {
+        "merged": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-release-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-main-36:/drawable/ic_launcher_background.xml"
+    }
+]

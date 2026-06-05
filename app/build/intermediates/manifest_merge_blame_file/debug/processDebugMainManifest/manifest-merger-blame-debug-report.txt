@@ -39,153 +39,152 @@
 26-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:11:9-48
 27        android:supportsRtl="true"
 27-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.BrightnessBar" >
-29-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:13:9-51
-30        <activity
-30-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:14:9-23:20
-31            android:name="com.marcos.brightnessbar.MainActivity"
-31-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:15:13-41
-32            android:exported="true"
-32-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:16:13-36
-33            android:label="@string/app_name"
-33-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:17:13-45
-34            android:theme="@style/Theme.BrightnessBar" >
-34-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:18:13-55
-35            <intent-filter>
-35-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:19:13-22:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:20:17-69
-36-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:20:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:21:17-77
-38-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:21:27-74
-39            </intent-filter>
-40        </activity>
-41
-42        <service
-42-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:25:9-35:19
-43            android:name="com.marcos.brightnessbar.BrightnessAccessibilityService"
-43-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:26:13-59
-44            android:exported="true"
-44-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:27:13-36
-45            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-45-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:28:13-79
-46            <intent-filter>
-46-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:29:13-31:29
-47                <action android:name="android.accessibilityservice.AccessibilityService" />
-47-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:30:17-92
-47-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:30:25-89
-48            </intent-filter>
-49
-50            <meta-data
-50-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:32:13-34:83
-51                android:name="android.accessibilityservice"
-51-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:33:17-60
-52                android:resource="@xml/brightness_accessibility_service_config" />
-52-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:34:17-80
-53        </service>
-54        <service
-54-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:37:9-46:19
-55            android:name="com.marcos.brightnessbar.BrightnessQsTileService"
-55-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:38:13-52
-56            android:exported="true"
-56-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:39:13-36
-57            android:icon="@drawable/ic_launcher_foreground"
-57-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:41:13-60
-58            android:label="@string/app_name"
-58-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:40:13-45
-59            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
-59-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:42:13-77
-60            <intent-filter>
-60-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:43:13-45:29
-61                <action android:name="android.service.quicksettings.action.QS_TILE" />
-61-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:44:17-87
-61-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:44:25-84
-62            </intent-filter>
-63        </service>
-64
-65        <activity
-65-->[androidx.compose.ui:ui-tooling-android:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/b234c19dc858acb8031c1e46bd8b6f3c/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
-66            android:name="androidx.compose.ui.tooling.PreviewActivity"
-66-->[androidx.compose.ui:ui-tooling-android:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/b234c19dc858acb8031c1e46bd8b6f3c/transformed/ui-tooling/AndroidManifest.xml:24:13-71
-67            android:exported="true" />
-67-->[androidx.compose.ui:ui-tooling-android:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/b234c19dc858acb8031c1e46bd8b6f3c/transformed/ui-tooling/AndroidManifest.xml:25:13-36
-68        <activity
-68-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:23:9-26:79
-69            android:name="androidx.activity.ComponentActivity"
-69-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:24:13-63
-70            android:exported="true"
-70-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:25:13-36
-71            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
-71-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:26:13-76
-72
-73        <provider
-73-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
-74            android:name="androidx.startup.InitializationProvider"
-74-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
-75            android:authorities="com.marcos.brightnessbar.androidx-startup"
-75-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
-76            android:exported="false" >
-76-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
-77            <meta-data
-77-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
-78                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-78-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
-79                android:value="androidx.startup" />
-79-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
-80            <meta-data
-80-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/marcos/.gradle/caches/8.13/transforms/8bc406895b0b97bedd8f8b9fe003a56d/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
-81                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-81-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/marcos/.gradle/caches/8.13/transforms/8bc406895b0b97bedd8f8b9fe003a56d/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
-82                android:value="androidx.startup" />
-82-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/marcos/.gradle/caches/8.13/transforms/8bc406895b0b97bedd8f8b9fe003a56d/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
-83            <meta-data
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-84                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-85                android:value="androidx.startup" />
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-86        </provider>
-87
-88        <receiver
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-90            android:directBootAware="false"
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-91            android:enabled="true"
-91-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-92            android:exported="true"
-92-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-93            android:permission="android.permission.DUMP" >
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-96            </intent-filter>
-97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-99            </intent-filter>
-100            <intent-filter>
-100-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-101-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-101-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-102            </intent-filter>
-103            <intent-filter>
-103-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-104-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-104-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-105            </intent-filter>
-106        </receiver>
-107    </application>
-108
-109</manifest>
+28        android:theme="@style/Theme.BrightnessBar" >
+28-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:13:9-51
+29        <activity
+29-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:14:9-23:20
+30            android:name="com.marcos.brightnessbar.MainActivity"
+30-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:15:13-41
+31            android:exported="true"
+31-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:16:13-36
+32            android:label="@string/app_name"
+32-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:17:13-45
+33            android:theme="@style/Theme.BrightnessBar" >
+33-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:18:13-55
+34            <intent-filter>
+34-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:19:13-22:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:20:17-69
+35-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:20:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:21:17-77
+37-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:21:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <service
+41-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:25:9-35:19
+42            android:name="com.marcos.brightnessbar.BrightnessAccessibilityService"
+42-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:26:13-59
+43            android:exported="true"
+43-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:27:13-36
+44            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+44-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:28:13-79
+45            <intent-filter>
+45-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:29:13-31:29
+46                <action android:name="android.accessibilityservice.AccessibilityService" />
+46-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:30:17-92
+46-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:30:25-89
+47            </intent-filter>
+48
+49            <meta-data
+49-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:32:13-34:83
+50                android:name="android.accessibilityservice"
+50-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:33:17-60
+51                android:resource="@xml/brightness_accessibility_service_config" />
+51-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:34:17-80
+52        </service>
+53        <service
+53-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:37:9-46:19
+54            android:name="com.marcos.brightnessbar.BrightnessQsTileService"
+54-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:38:13-52
+55            android:exported="true"
+55-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:39:13-36
+56            android:icon="@drawable/ic_launcher_foreground"
+56-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:41:13-60
+57            android:label="@string/app_name"
+57-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:40:13-45
+58            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
+58-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:42:13-77
+59            <intent-filter>
+59-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:43:13-45:29
+60                <action android:name="android.service.quicksettings.action.QS_TILE" />
+60-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:44:17-87
+60-->/home/marcos/kotlin_projects/BrightnessBar/app/src/main/AndroidManifest.xml:44:25-84
+61            </intent-filter>
+62        </service>
+63
+64        <activity
+64-->[androidx.compose.ui:ui-tooling-android:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/b234c19dc858acb8031c1e46bd8b6f3c/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+65            android:name="androidx.compose.ui.tooling.PreviewActivity"
+65-->[androidx.compose.ui:ui-tooling-android:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/b234c19dc858acb8031c1e46bd8b6f3c/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+66            android:exported="true" />
+66-->[androidx.compose.ui:ui-tooling-android:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/b234c19dc858acb8031c1e46bd8b6f3c/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+67        <activity
+67-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:23:9-26:79
+68            android:name="androidx.activity.ComponentActivity"
+68-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:24:13-63
+69            android:exported="true"
+69-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:25:13-36
+70            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+70-->[androidx.compose.ui:ui-test-manifest:1.9.2] /home/marcos/.gradle/caches/8.13/transforms/355ed3fe73ef2513f4d9071774827ac0/transformed/ui-test-manifest-1.9.2/AndroidManifest.xml:26:13-76
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+74            android:authorities="com.marcos.brightnessbar.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/a1569444ea2168a42ab7a42caee4958c/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/marcos/.gradle/caches/8.13/transforms/8bc406895b0b97bedd8f8b9fe003a56d/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/marcos/.gradle/caches/8.13/transforms/8bc406895b0b97bedd8f8b9fe003a56d/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.10.0] /home/marcos/.gradle/caches/8.13/transforms/8bc406895b0b97bedd8f8b9fe003a56d/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+82            <meta-data
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+84                android:value="androidx.startup" />
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+85        </provider>
+86
+87        <receiver
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+88            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+89            android:directBootAware="false"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+90            android:enabled="true"
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+91            android:exported="true"
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+92            android:permission="android.permission.DUMP" >
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+94                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+97                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+100                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+103                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/marcos/.gradle/caches/8.13/transforms/d287d99f76a2b244a1c1e11d803c1e5e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+104            </intent-filter>
+105        </receiver>
+106    </application>
+107
+108</manifest>

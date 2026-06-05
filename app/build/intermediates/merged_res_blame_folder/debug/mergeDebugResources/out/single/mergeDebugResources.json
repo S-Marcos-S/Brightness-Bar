@@ -4,12 +4,12 @@
         "source": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-main-36:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.marcos.brightnessbar.app-debug-34:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.marcos.brightnessbar.app-main-36:/drawable/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-debug-34:/xml_brightness_accessibility_service_config.xml.flat",
         "source": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-main-36:/xml/brightness_accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.marcos.brightnessbar.app-debug-34:/xml_brightness_accessibility_service_config.xml.flat",
+        "source": "com.marcos.brightnessbar.app-main-36:/xml/brightness_accessibility_service_config.xml"
     },
     {
         "merged": "/home/marcos/.gradle/daemon/8.13/com.marcos.brightnessbar.app-debug-34:/drawable_ic_launcher_foreground.xml.flat",

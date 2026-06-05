@@ -15,15 +15,32 @@ class BrightnessAccessibilityService : AccessibilityService() {
     private var windowManager: WindowManager? = null
     private var overlayView: View? = null
     private lateinit var prefs: AppPreferences
+    private var lastSetBrightness: Int = -1
+    private var prefsListener: android.content.SharedPreferences.OnSharedPreferenceChangeListener? = null
 
     override fun onServiceConnected() {
         super.onServiceConnected()
         prefs = AppPreferences(this)
         windowManager = getSystemService(Context.WINDOW_SERVICE) as WindowManager
-        setupOverlay()
+        
+        if (prefs.isEnabled) {
+            setupOverlay()
+        }
+
+        prefsListener = prefs.registerListener { key ->
+            if (key == "is_enabled") {
+                if (prefs.isEnabled) {
+                    setupOverlay()
+                } else {
+                    removeOverlay()
+                }
+            }
+        }
     }
 
     private fun setupOverlay() {
+        if (overlayView != null) return
+
         val statusBarHeight = getStatusBarHeight()
         val params = WindowManager.LayoutParams(
             WindowManager.LayoutParams.MATCH_PARENT,
@@ -40,8 +57,6 @@ class BrightnessAccessibilityService : AccessibilityService() {
                 private var initialBrightness = 0
 
                 override fun onTouch(v: View, event: MotionEvent): Boolean {
-                    if (!prefs.isEnabled) return false
-
                     when (event.action) {
                         MotionEvent.ACTION_DOWN -> {
                             initialX = event.rawX
@@ -50,11 +65,13 @@ class BrightnessAccessibilityService : AccessibilityService() {
                         MotionEvent.ACTION_MOVE -> {
                             val deltaX = event.rawX - initialX
                             val screenWidth = resources.displayMetrics.widthPixels
-                            // Sensibilidade: percorrer a tela toda muda de 0 a 255
                             val brightnessDelta = (deltaX / screenWidth * 255).toInt()
                             val newBrightness = (initialBrightness + brightnessDelta).coerceIn(0, 255)
                             
-                            updateBrightness(newBrightness)
+                            if (newBrightness != lastSetBrightness) {
+                                updateBrightness(newBrightness)
+                                lastSetBrightness = newBrightness
+                            }
                         }
                     }
                     return true
@@ -62,6 +79,13 @@ class BrightnessAccessibilityService : AccessibilityService() {
             })
         }
         windowManager?.addView(overlayView, params)
+    }
+
+    private fun removeOverlay() {
+        overlayView?.let {
+            windowManager?.removeView(it)
+            overlayView = null
+        }
     }
 
     private fun getCurrentBrightness(): Int {
@@ -85,17 +109,12 @@ class BrightnessAccessibilityService : AccessibilityService() {
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {}
     override fun onInterrupt() {
-        overlayView?.let {
-            windowManager?.removeView(it)
-            overlayView = null
-        }
+        removeOverlay()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        overlayView?.let {
-            windowManager?.removeView(it)
-            overlayView = null
-        }
+        prefsListener?.let { prefs.unregisterListener(it) }
+        removeOverlay()
     }
 }
