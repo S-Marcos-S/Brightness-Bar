@@ -9,4 +9,6 @@
     <string name="accessibility_desc">Necessário para detectar o deslize na barra de status.</string>
     <string name="grant_button">Conceder</string>
     <string name="granted_label">Concedida</string>
+    <string name="auto_start_label">Início Automático</string>
+    <string name="auto_start_desc">Iniciar o aplicativo automaticamente ao ligar o dispositivo.</string>
 </resources>

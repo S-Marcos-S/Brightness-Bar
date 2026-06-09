@@ -9,6 +9,10 @@ class AppPreferences(context: Context) {
         get() = sharedPreferences.getBoolean("is_enabled", true)
         set(value) = sharedPreferences.edit().putBoolean("is_enabled", value).apply()
 
+    var autoStart: Boolean
+        get() = sharedPreferences.getBoolean("auto_start", false)
+        set(value) = sharedPreferences.edit().putBoolean("auto_start", value).apply()
+
     fun registerListener(listener: (String) -> Unit): android.content.SharedPreferences.OnSharedPreferenceChangeListener {
         val spListener = android.content.SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
             if (key != null) listener(key)

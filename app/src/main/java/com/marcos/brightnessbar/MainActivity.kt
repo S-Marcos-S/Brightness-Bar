@@ -24,6 +24,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,12 +64,15 @@ fun PermissionsScreen() {
     var isWriteSettingsGranted by remember { mutableStateOf(Settings.System.canWrite(context)) }
     var isAccessibilityEnabled by remember { mutableStateOf(isAccessibilityServiceEnabled(context)) }
     var isAppEnabled by remember { mutableStateOf(prefs.isEnabled) }
+    var isAutoStartEnabled by remember { mutableStateOf(prefs.autoStart) }
 
     // Listener para sincronizar estado com SharedPreferences
     DisposableEffect(Unit) {
         val listener = prefs.registerListener { key ->
             if (key == "is_enabled") {
                 isAppEnabled = prefs.isEnabled
+            } else if (key == "auto_start") {
+                isAutoStartEnabled = prefs.autoStart
             }
         }
         onDispose {
@@ -83,6 +88,7 @@ fun PermissionsScreen() {
                 isWriteSettingsGranted = Settings.System.canWrite(context)
                 isAccessibilityEnabled = isAccessibilityServiceEnabled(context)
                 isAppEnabled = prefs.isEnabled
+                isAutoStartEnabled = prefs.autoStart
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
@@ -94,6 +100,7 @@ fun PermissionsScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .verticalScroll(rememberScrollState())
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
@@ -143,6 +150,45 @@ fun PermissionsScreen() {
                             context,
                             android.content.ComponentName(context, BrightnessQsTileService::class.java)
                         )
+                    }
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = if (isSystemInDarkTheme()) Color(0xFF121212) else MaterialTheme.colorScheme.surfaceVariant
+            )
+        ) {
+            Row(
+                modifier = Modifier
+                    .padding(24.dp)
+                    .fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = stringResource(id = R.string.auto_start_label),
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Text(
+                        text = stringResource(id = R.string.auto_start_desc),
+                        fontSize = 14.sp,
+                        color = Color.Gray
+                    )
+                }
+                Spacer(modifier = Modifier.width(8.dp))
+                Switch(
+                    checked = isAutoStartEnabled,
+                    onCheckedChange = {
+                        isAutoStartEnabled = it
+                        prefs.autoStart = it
+                        setBootReceiverEnabled(context, it)
                     }
                 )
             }
@@ -230,4 +276,15 @@ fun isAccessibilityServiceEnabled(context: Context): Boolean {
         context.contentResolver,
         Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES
     )?.contains(context.packageName) == true
+}
+
+fun setBootReceiverEnabled(context: Context, enabled: Boolean) {
+    val receiver = android.content.ComponentName(context, BootCompletedReceiver::class.java)
+    val pm = context.packageManager
+    pm.setComponentEnabledSetting(
+        receiver,
+        if (enabled) android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+        else android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+        android.content.pm.PackageManager.DONT_KILL_APP
+    )
 }
